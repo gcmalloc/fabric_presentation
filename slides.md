@@ -1,7 +1,7 @@
 %Fabric, easy deploy !
 %Malik Bougacha
 
-###deployment
+###Deployment
 
 * Shell script to install dependencies
 \pause
@@ -22,10 +22,17 @@ def uname():
 
 * In a "fabfile.py" file
 
-###calling the rule
+###Calling the rule
 
 ```
 fab -H 127.0.0.1 uname
+```
+
+* Can also use the ssh config
+
+```
+fab -H test uname
+```
 
 ###Writing doc
 
@@ -45,14 +52,17 @@ Available commands:
     uname  print the name of the system to stdout
 ```
 
-List of available commands
 
 ###Extension for commands
-```
+
+```python
 def run_service(service):
     sudo("service {} start".format(service)
 ```
-*either called with
+
+List of available commands
+
+* Either called with
 
 ```python
 run_service("rabbitmq-server")
