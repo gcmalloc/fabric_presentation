@@ -1,4 +1,4 @@
-from fabric import run, sudo
+from fabric.api import run, sudo
 from fabric.contrib.files import exists
 
 
