@@ -96,17 +96,17 @@ fab run_service:rabbitmq-server
 ```python
 import cuisine
 cuisine.upstart_ensure("rabbitmq-server")
-cusine.package_ensure("linux-base")
+cuisine.package_ensure("linux-base")
 ```
 
 * support multiple os under certain condition
 
 ```python
-cusine.package_install("linux-base")
-cusine.package_install_yum("linux-base")
-cusine.package_install_apt("linux-base")
-cusine.package_install_emerge("linux-base")
-cusine.package_install_pacman("linux-base")
+cuisine.package_install("linux-base")
+cuisine.package_install_yum("linux-base")
+cuisine.package_install_apt("linux-base")
+cuisine.package_install_emerge("linux-base")
+cuisine.package_install_pacman("linux-base")
 ```
 
 ###Going faster
